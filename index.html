@@ -22,33 +22,123 @@
 
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="LR-designs/API Superstore Icon.png">
+        <link rel="favicon" href="LR-designs/favicon.ico">
 
     </head>
     <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
-
-        <!-- TODO: Create an area to put the explainer video. -->
-
-        <!-- TODO: Create an area to put the long product description. -->
-
-        <!-- TODO: Create an area to put customer testimonials. -->
+        <!-- <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1> -->
+      <div class="container">
+        <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="65px" height="65px" class="pull-left">
+        <button class="btn btn-success pull-right">Sign Up</button>
+        <button class="btn btn-success pull-right">Login</button>
+      </div>
+      <h1 class="text-uppercase text-center" style="color: red;">API Superstore</h1>
+      <nav class="navbar navbar-default bg-primary" style="backrgound-color: rgb(40,107,204); color: white;">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-6">
+      <iframe height="315" width="100%" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      <div class="col-md-6" style="background-color: rgb(0,222,228); color: white;">
+        <h2>About Us</h2>
+        <h4>What we do</h4>
+        <p>Provide your company with a quick and easy way to find essential API's for your business</p>
+        <h4>How we work</h4>
+        <p>Sign Up for our service and use our search engine to find the best API's at your fingertips</p>
+        <h4>Why you need us</h4>
+        <p>To help save you valuable time (which saves you $$$!)</p>  
+        </div>
+      </div>
 
         <!-- TODO: Create an area to show features. -->
+      
+      <h2 class="text-center" style="color: red;">Features</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="LR-designs/Search Icon.GIF" alt="search icon" max-height="200" class="img-responsive center-block">
+          <p class="text-center" style="background-color: rgb(95,194,99);">Easy to search Database with option to save Favorites</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="LR-designs/Save Money Icon.GIF" alt="money icon" max-height="200" class="img-responsive center-block">
+          <p class="text-center" style="background-color: rgb(95,194,99);">Save 25% off your first month by signing up for auto-payments.</p>
+        </div>
+        <div class="col-sm-4">
+          <img src="LR-designs/Platform Icon.GIF" alt="platform icon" max-height="200" class="img-responsive center-block">
+          <p class="text-center" style="background-color: rgb(95,194,99);">Works with all current browsers (IE 8 and later), Andriod and iOS.</p>
+        </div>
+      </div>
+        <!-- TODO: Create an area to put customer testimonials. -->
 
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
+      <h2 class="text-center" style="background-color: rgb(0,222,228); color: white;">Testimonials</h2>
+      <div class="row" style="background-color: rgb(0,222,228); color: white;">
+        <div class="col-md-6">
+          <img src="LR-designs/Headshot 1.GIF" alt="Joe Everyman headshot" class="pull-left">
+          <blockquote>
+          <p>&ldquo;I am amazed with how much time (and therefore money) we have saved with using API Superstore! I couldn't imagine running my business without it!&rdquo;</p>
+          <footer>Joe Everyman, CEO, Business, Inc.</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <img src="LR-designs/Headshot 2.GIF" alt="Jackie Jackson headshot" class="pull-left">
+          <blockquote>
+          <p>&ldquo;API Superstore not only delivers the best API database out there, but also provides a service so easy, even my dog could use it (if he had opposable thumbs)!&rdquo;</p>
+          <footer>Jackie Jackson, Owner, Internet Solutions</footer>
+          </blockquote>
+        </div>
+      </div>
 
         <!-- TODO: Create a call to action link to get users to sign up for the
              service. -->
+        
+        <h2 class="text-center">Contact Us</h2>
+        <form class="form-inline text-center">
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="text" id="inputName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" placeholder="Email">
+          </div>
+           <input class="btn btn-warning" type="submit" value="submit">
+        </form>
+        
+        
+        <footer style="background-color: rgb(40,107,204); color: white;">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3 class="text-center">Contact Information</h3>
+                <p class="text-center">123 Any Street<br>
+                   Seattle, WA 98000</p>
+                <p class="text-center">(206) 200-0000<br>
+                <a href="mailto:info@apisuperstore.com" style="color: white;">info@apisuperstore.com</a></p>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="text-center">More About Us</h3>
+              <ul class="list-unstyled">
+                <li class="text-center"><a href="#" style="color: white;">Job Opportunities</a></li>
+                <li class="text-center"><a href="#" style="color: white;">Legal Disclaimers</a></li>
+                <li class="text-center"><a href="#" style="color: white;">Privacy Policy</a></li>
+                <li class="text-center"><a href="#" style="color: white;">Contact the Webmaster</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="text-center">Share Your Experience</h3>
+              <ul class="list-unstyled list-inline text-center">
+                <li><a href="http://www.facebook.com" title="Facebook link"><img src="LR-designs/facebook favicon.svg" alt="Facebook icon" height="50px" width="50px"></a></li>
+                <li><a href="http://www.twitter.com" title="Twitter link"><img src="LR-designs/twitter favicon.svg" alt="Twitter icon" height="50px" width="50px"></a></li>
+                <li><a href="http://www.instagram.com" title="Instagram link"><img src="LR-designs/instagram favicon.svg" alt="Instagram icon" height="50px" width="50px"></a></li>  
+              </ul>
+            </div>
+          </div>
+          <p>&copy; Copyright 2017 - SU Web Development</p>
+        </footer>
     </body>
 </html>
