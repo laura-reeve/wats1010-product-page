@@ -1,8 +1,55 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-body {
+/* body {
     padding-top: 30px;
     padding-bottom: 20px;
     color: green;
+} */
+
+/* GLOBAL STYLES */
+
+h1 {
+  color: red;
+}
+
+/* NAVBAR */
+nav {
+  background-color: rgb(40,107,204);
+  color: white;
+}
+
+/* SECTIONS */
+
+/* Affects both About Us and Testimonials sections */
+#teal-section {
+  background-color: rgb(0,222,228); 
+  color: white;
+}
+
+#features {
+  color: red;
+}
+
+ img + p {
+  background-color: rgb(95,194,99);
+  max-width: 200px;
+  margin: auto;
+}
+
+/* Form */
+
+div.form-group {
+  padding-right: 50px;
+}
+
+/* FOOTER */
+
+#page-footer {
+  background-color: rgb(40,107,204); 
+  color: white;
+}
+
+#page-footer a {
+  color: white;
 }

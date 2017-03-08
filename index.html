@@ -4,37 +4,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
+        <meta name="description" content="API search service">
+        <meta name="keywords" content="API,superstore,super,store,search,database">
         <title>API Superstore</title>
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
-
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
-
+        <link rel="stylesheet" href="main.css">
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
         <link rel="apple-touch-icon" href="LR-designs/API Superstore Icon.png">
         <link rel="favicon" href="LR-designs/favicon.ico">
-
     </head>
     <body>
-        <!-- <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1> -->
       <div class="container">
         <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="65px" height="65px" class="pull-left">
         <button class="btn btn-success pull-right">Sign Up</button>
         <button class="btn btn-success pull-right">Login</button>
       </div>
-      <h1 class="text-uppercase text-center" style="color: red;">API Superstore</h1>
-      <nav class="navbar navbar-default bg-primary" style="backrgound-color: rgb(40,107,204); color: white;">
+      <h1 class="text-uppercase text-center">API Superstore</h1>
+      <nav class="navbar navbar-default bg-primary">
         <ul class="nav navbar-nav">
           <li><a href="#">About Us</a></li>
           <li><a href="#">Features</a></li>
@@ -42,61 +30,61 @@
           <li><a href="#">Contact Us</a></li>
         </div>
       </nav>
-      <div class="row">
-        <div class="col-md-6">
-      <iframe height="315" width="100%" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
-        </div>
-      <div class="col-md-6" style="background-color: rgb(0,222,228); color: white;">
-        <h2>About Us</h2>
-        <h4>What we do</h4>
-        <p>Provide your company with a quick and easy way to find essential API's for your business</p>
-        <h4>How we work</h4>
-        <p>Sign Up for our service and use our search engine to find the best API's at your fingertips</p>
-        <h4>Why you need us</h4>
-        <p>To help save you valuable time (which saves you $$$!)</p>  
-        </div>
-      </div>
-
-        <!-- TODO: Create an area to show features. -->
-      
-      <h2 class="text-center" style="color: red;">Features</h2>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="LR-designs/Search Icon.GIF" alt="search icon" max-height="200" class="img-responsive center-block">
-          <p class="text-center" style="background-color: rgb(95,194,99);">Easy to search Database with option to save Favorites</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="LR-designs/Save Money Icon.GIF" alt="money icon" max-height="200" class="img-responsive center-block">
-          <p class="text-center" style="background-color: rgb(95,194,99);">Save 25% off your first month by signing up for auto-payments.</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="LR-designs/Platform Icon.GIF" alt="platform icon" max-height="200" class="img-responsive center-block">
-          <p class="text-center" style="background-color: rgb(95,194,99);">Works with all current browsers (IE 8 and later), Andriod and iOS.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <iframe height="315" width="100%" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6" id="teal-section">
+            <h2>About Us</h2>
+            <h4>Who are we?</h4>
+            <p>A world class API superstore!</p>
+            <h4>What we do</h4>
+            <p>Provide your company with a quick and easy way to find essential API's for your business</p>
+            <h4>How we work</h4>
+            <p>Sign Up for our service and use our search engine to find the best API's at your fingertips</p>
+            <h4>Why you need us</h4>
+            <p>To help save you valuable time (which saves you $$$!)</p>  
+          </div>
         </div>
       </div>
-        <!-- TODO: Create an area to put customer testimonials. -->
-
-      <h2 class="text-center" style="background-color: rgb(0,222,228); color: white;">Testimonials</h2>
-      <div class="row" style="background-color: rgb(0,222,228); color: white;">
-        <div class="col-md-6">
-          <img src="LR-designs/Headshot 1.GIF" alt="Joe Everyman headshot" class="pull-left">
-          <blockquote>
-          <p>&ldquo;I am amazed with how much time (and therefore money) we have saved with using API Superstore! I couldn't imagine running my business without it!&rdquo;</p>
-          <footer>Joe Everyman, CEO, Business, Inc.</footer>
-          </blockquote>
-        </div>
-        <div class="col-md-6">
-          <img src="LR-designs/Headshot 2.GIF" alt="Jackie Jackson headshot" class="pull-left">
-          <blockquote>
-          <p>&ldquo;API Superstore not only delivers the best API database out there, but also provides a service so easy, even my dog could use it (if he had opposable thumbs)!&rdquo;</p>
-          <footer>Jackie Jackson, Owner, Internet Solutions</footer>
-          </blockquote>
+      <div class="container">
+        <h2 class="text-center" id="features">Features</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="LR-designs/Search Icon.GIF" alt="search icon" max-height="200" class="img-responsive center-block">
+            <p class="text-center">Easy to search Database with option to save Favorites</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="LR-designs/Save Money Icon.GIF" alt="money icon" max-height="200" class="img-responsive center-block">
+            <p class="text-center">Save 25% off your first month by signing up for auto-payments.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="LR-designs/Platform Icon.GIF" alt="platform icon" max-height="200" class="img-responsive center-block">
+            <p class="text-center">Works with all current browsers (IE 8 and later), Andriod and iOS.</p>
+          </div>
         </div>
       </div>
-
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
-        
+      <div class="container" id="teal-section">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="LR-designs/headshot-guy.JPG" alt="Joe Everyman headshot" class="img-responsive img-thumbnail pull-left">
+            <blockquote>
+              <p>&ldquo;I am amazed with how much time (and therefore money) we have saved with using API Superstore! I couldn't imagine running my business without it!&rdquo;</p>
+              <footer>Joe Everyman, CEO, Business, Inc.</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <img src="LR-designs/headshot-girl.JPG" alt="Jackie Jackson headshot" class="img-responsive img-thumbnail pull-left">
+            <blockquote>
+              <p>&ldquo;API Superstore not only delivers the best API database out there, but also provides a service so easy, even my dog could use it (if he had opposable thumbs)!&rdquo;</p>
+              <footer>Jackie Jackson, Owner, Internet Solutions</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <h2 class="text-center">Contact Us</h2>
         <form class="form-inline text-center">
           <div class="form-group">
@@ -109,24 +97,23 @@
           </div>
            <input class="btn btn-warning" type="submit" value="submit">
         </form>
-        
-        
-        <footer style="background-color: rgb(40,107,204); color: white;">
+      </div>
+        <footer class="container" id="page-footer">
           <div class="row">
             <div class="col-sm-4">
               <h3 class="text-center">Contact Information</h3>
                 <p class="text-center">123 Any Street<br>
                    Seattle, WA 98000</p>
                 <p class="text-center">(206) 200-0000<br>
-                <a href="mailto:info@apisuperstore.com" style="color: white;">info@apisuperstore.com</a></p>
+                <a href="mailto:info@apisuperstore.com">info@apisuperstore.com</a></p>
             </div>
             <div class="col-sm-4">
               <h3 class="text-center">More About Us</h3>
               <ul class="list-unstyled">
-                <li class="text-center"><a href="#" style="color: white;">Job Opportunities</a></li>
-                <li class="text-center"><a href="#" style="color: white;">Legal Disclaimers</a></li>
-                <li class="text-center"><a href="#" style="color: white;">Privacy Policy</a></li>
-                <li class="text-center"><a href="#" style="color: white;">Contact the Webmaster</a></li>
+                <li class="text-center"><a href="#">Job Opportunities</a></li>
+                <li class="text-center"><a href="#">Legal Disclaimers</a></li>
+                <li class="text-center"><a href="#">Privacy Policy</a></li>
+                <li class="text-center"><a href="#">Contact the Webmaster</a></li>
               </ul>
             </div>
             <div class="col-sm-4">
