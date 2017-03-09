@@ -13,15 +13,75 @@
         <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
         <link rel="apple-touch-icon" href="LR-designs/API Superstore Icon.png">
-        <link rel="favicon" href="LR-designs/favicon.ico">
+        <link rel="icon" href="LR-designs/favicon.ico">
     </head>
     <body>
       <div class="container">
-        <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="65px" height="65px" class="pull-left">
-        <button class="btn btn-success pull-right">Sign Up</button>
-        <button class="btn btn-success pull-right">Login</button>
+        <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#signupform">Sign Up</button>
+        <div class="modal" id="signupform" tabindex="-1" role="dialog" aira-labelledby="modalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                 <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input class="form-control" type="text" id="inputName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputCompany">Company</label>
+                    <input class="form-control" type="text" id="inputCompany" placeholder="Company">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPhone">Phone</label>
+                    <input class="form-control" type="text" id="inputPhone" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input class="form-control" type="email" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input class="form-control" type="password" id="inputPassword" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPasswordConfirm">Confirm Password</label>
+                    <input class="form-control" type="passwordConfirm" id="inputPasswordConfirm" placeholder="Confirm Password">
+                  </div>
+                  <h5>How did you hear about us?</h5>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label><input type="checkbox">Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label><input type="checkbox">Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label><input type="checkbox">News Article&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label><input type="checkbox">Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                   <input class="btn btn-warning" type="submit" value="Submit"> 
+              </div>
+            </div> 
+          </div>
+        </div>
+        <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#loginform">Login</button>
+        <div class="modal" id="loginform" tabindex="-1" role="dialog" aira-labelledby="modalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input class="form-control" type="email" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                      <label for="inputPassword">Password</label>
+                      <input class="form-control" type="email" id="inputPassword" placeholder="Password">
+                  </div> 
+                      <input class="btn btn-warning" type="login" value="Login">
+              </div>
+            </div>
+          </div> 
+        </div>
       </div>
-      <h1 class="text-uppercase text-center">API Superstore</h1>
+      <div class="container">
+        <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="75px" height="75px" class="pull-left" id="icon">
+        <h1 class="text-center">API Superstore</h1>
+      </div>
       <nav class="navbar navbar-default">
         <div class="container">
         <div class="navbar-header">
@@ -53,12 +113,12 @@
             <h2>About Us</h2>
             <h4>Who are we?</h4>
             <p>A world class API superstore!</p>
-            <h4>What we do</h4>
-            <p>Provide your company with a quick and easy way to find essential API's for your business</p>
-            <h4>How we work</h4>
-            <p>Sign Up for our service and use our search engine to find the best API's at your fingertips</p>
-            <h4>Why you need us</h4>
-            <p>To help save you valuable time (which saves you $$$!)</p>  
+            <h4>What do we do?</h4>
+            <p>Provide your company with a quick and easy way to find essential API's for your business.</p>
+            <h4>How do we work?</h4>
+            <p>Sign Up for our service and use our search engine to find the best API's at your fingertips.</p>
+            <h4>Why do you need us?</h4>
+            <p>To help save you valuable time (which saves you $$$!).</p>  
           </div>
         </div>
       </div>
@@ -66,15 +126,15 @@
         <h2 class="text-center" id="features">Features</h2>
         <div class="row">
           <div class="col-sm-4">
-            <img src="LR-designs/Search Icon.GIF" alt="search icon" max-height="200" class="img-responsive center-block">
+            <img src="LR-designs/002-search.svg" alt="search icon" width="100px" height="auto" class="img-responsive center-block">
             <p class="text-center">Easy to search Database with option to save Favorites</p>
           </div>
           <div class="col-sm-4">
-            <img src="LR-designs/Save Money Icon.GIF" alt="money icon" max-height="200" class="img-responsive center-block">
+            <img src="LR-designs/003-coins.svg" alt="money icon" width="100px" height="auto" class="img-responsive center-block">
             <p class="text-center">Save 25% off your first month by signing up for auto-payments.</p>
           </div>
           <div class="col-sm-4">
-            <img src="LR-designs/Platform Icon.GIF" alt="platform icon" max-height="200" class="img-responsive center-block">
+            <img src="LR-designs/001-cellphone.svg" alt="platform icon" width="100px" height="auto" class="img-responsive center-block">
             <p class="text-center">Works with all current browsers (IE 8 and later), Andriod and iOS.</p>
           </div>
         </div>
@@ -83,14 +143,14 @@
         <h2 class="text-center">Testimonials</h2>
         <div class="row">
           <div class="col-md-6">
-            <img src="LR-designs/headshot-guy.JPG" alt="Joe Everyman headshot" class="img-responsive img-thumbnail pull-left">
+            <img src="LR-designs/headshot-guy.JPG" alt="Joe Everyman headshot" class="img-responsive img-thumbnail pull-left" width="125px" height="auto">
             <blockquote>
               <p>&ldquo;I am amazed with how much time (and therefore money) we have saved with using API Superstore! I couldn't imagine running my business without it!&rdquo;</p>
               <footer>Joe Everyman, CEO, Business, Inc.</footer>
             </blockquote>
           </div>
           <div class="col-md-6">
-            <img src="LR-designs/headshot-girl.JPG" alt="Jackie Jackson headshot" class="img-responsive img-thumbnail pull-left">
+            <img src="LR-designs/headshot-girl.JPG" alt="Jackie Jackson headshot" class="img-responsive img-thumbnail pull-left" width="125px" height="auto">
             <blockquote>
               <p>&ldquo;API Superstore not only delivers the best API database out there, but also provides a service so easy, even my dog could use it (if he had opposable thumbs)!&rdquo;</p>
               <footer>Jackie Jackson, Owner, Internet Solutions</footer>
@@ -98,7 +158,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="contact-form">
         <h2 class="text-center">Contact Us</h2>
         <form class="form-inline text-center">
           <div class="form-group">
