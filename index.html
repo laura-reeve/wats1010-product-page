@@ -17,6 +17,8 @@
     </head>
     <body>
       <div class="container">
+        <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="75px" height="75px" class="pull-left" id="icon">
+        <h1 class="text-center">API Superstore</h1>
         <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#signupform">Sign Up</button>
         <div class="modal" id="signupform" tabindex="-1" role="dialog" aira-labelledby="modalLabel">
           <div class="modal-dialog" role="document">
@@ -78,10 +80,6 @@
           </div> 
         </div>
       </div>
-      <div class="container">
-        <img src="LR-designs/API Superstore Icon.png" alt="API Superstore icon" width="75px" height="75px" class="pull-left" id="icon">
-        <h1 class="text-center">API Superstore</h1>
-      </div>
       <nav class="navbar navbar-default">
         <div class="container">
         <div class="navbar-header">
@@ -96,10 +94,10 @@
         
           <div class="collapse navbar-collapse" id="collapsemenu">
             <ul class="nav navbar-nav">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact-form">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -110,7 +108,7 @@
             <iframe height="315" width="100%" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-md-6" id="teal-section">
-            <h2>About Us</h2>
+            <h2 id="about-us">About Us</h2>
             <h4>Who are we?</h4>
             <p>A world class API superstore!</p>
             <h4>What do we do?</h4>
@@ -122,8 +120,8 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <h2 class="text-center" id="features">Features</h2>
+      <div class="container" id="features">
+        <h2 class="text-center">Features</h2>
         <div class="row">
           <div class="col-sm-4">
             <img src="LR-designs/002-search.svg" alt="search icon" width="100px" height="auto" class="img-responsive center-block">
@@ -140,7 +138,7 @@
         </div>
       </div>
       <div class="container" id="teal-section">
-        <h2 class="text-center">Testimonials</h2>
+        <h2 class="text-center" id="testimonials">Testimonials</h2>
         <div class="row">
           <div class="col-md-6">
             <img src="LR-designs/headshot-guy.JPG" alt="Joe Everyman headshot" class="img-responsive img-thumbnail pull-left" width="125px" height="auto">
@@ -199,7 +197,7 @@
               </ul>
             </div>
           </div>
-          <p>&copy; Copyright 2017 - SU Web Development</p>
+          <p id="copyright">&copy; Copyright 2017 - SU Web Development</p>
         </footer>
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
